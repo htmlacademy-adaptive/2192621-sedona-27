@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+</head>
+
+<body class="page__body">
+  <header class="main-header">
+    <a class="main-header__logo">
+      <img class="main-header__logo-image" src="img/logotype-phone.svg" width="185" height="96" alt="Город Седона.">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button"> <span class="visually-hidden">Открыть меню</span></button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a href="index.html">
+              Главная
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="catalog.html">
+              Фото и видео
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">
+              Форма отзыва
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">
+              Html academy
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="main-container">
+    <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
+    <section class="catalog">
+      <h2 class="catalog__title">Фото и видео</h2>
+      <p class="catalog__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о
+        политике и экономике.</p>
+      <ul class="catalog__list">
+        <li class="catalog__item">
+          <h3 class="catalog__card-title">Неродные просторы</h3>
+          <p class="catalog__card-description">Автор фото: Борис</p>
+          <span class="catalog-counter--number">1350</span>
+        </li>
+        <li class="catalog__item">
+          <h3 class="catalog__card-title">Местная растительность</h3>
+          <p class="catalog__card-description">Автор фото: Сергей</p>
+          <span class="catalog-counter--number">143</span>
+        </li>
+        <li class="catalog__item">
+          <h3 class="catalog__card-title">Дорога на север</h3>
+          <p class="catalog__card-description">Автор фото: Петр</p>
+          <span class="catalog-counter--number">96</span>
+        </li>
+        <li class="catalog__item">
+          <h3 class="catalog__card-title">Мост дьявола</h3>
+          <p class="catalog__card-description">Автор фото: Антон</p>
+          <span class="catalog-counter--number">254</span>
+        </li>
+      </ul>
+    </section>
+    <section class="presentaion">
+      <h2 class="presentaion__title">Все еще сомневаетесь?</h2>
+      <p class="presentaion__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
+        очередной раз!</p>
+      <div class="player"></div>
+    </section>
+  </main>
+  <footer class="main-footer">
+    <div class="main-footer__wrapper">
+      <a class="main-footer__link link" href="#">#visitsedona</a>
+      <div class="main-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">ВКонтакте</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Телеграмм</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Ютуб</a>
+          </li>
+        </ul>
+      </div>
+      <div class="main-footer__copyright copyright">
+        <p class="copyright__text">Разработано</p>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <svg width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z"
+              fill="#000" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
