@@ -1,17 +1,3 @@
-@font-face {
-  font-family: "PT Sans";
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-  src: url("/source/fonts/ptsans.woff2");
-}
-@font-face {
-  font-family: "PT Sans";
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-  src: url("/source/fonts/ptsansbold.woff2");
-}
 .page__body {
   text-align: center;
   width: -moz-fit-content;
@@ -34,6 +20,7 @@
 }
 
 .header__logo {
+  position: relative;
   margin-bottom: -15px;
   z-index: 1;
 }
@@ -54,22 +41,6 @@
   padding: 0;
   margin: 0;
   list-style-type: none;
-}
-
-.site-list__item {
-  background-color: #81b3d2;
-}
-
-.site-list__item-link {
-  display: block;
-  padding-top: 17px;
-  padding-bottom: 12px;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.4;
-  color: #ffffff;
-  text-transform: uppercase;
-  text-decoration: none;
 }
 
 .advantages__title {
@@ -132,7 +103,7 @@
   text-transform: uppercase;
 }
 
-.advantages__sublist {
+.reasons {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -140,6 +111,24 @@
   padding: 23px 18px 46px;
   list-style-type: none;
   color: #000000;
+}
+
+.reasons__card-title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.4;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.reasons__card-description {
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333333;
+  text-transform: uppercase;
 }
 
 .advantages__container--devil {
@@ -209,14 +198,6 @@
 
 .footer__copyright {
   margin: 0;
-}
-
-.copyright__text {
-  text-transform: uppercase;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.5;
-  color: #000000;
 }
 
 .catalog__title {
@@ -304,6 +285,44 @@
   text-transform: uppercase;
 }
 
+@font-face {
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("/source/fonts/ptsans.woff2");
+}
+@font-face {
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("/source/fonts/ptsansbold.woff2");
+}
+.site-list__item {
+  background-color: #81b3d2;
+}
+
+.site-list__item-link {
+  display: block;
+  padding-top: 17px;
+  padding-bottom: 12px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.4;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.copyright__text {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #000000;
+}
+
 .form__fieldset {
   padding: 0;
   margin: 0;
@@ -323,6 +342,26 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+.form__wishes-text {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.4;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.form__button {
+  padding: 16px 49px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 1.2;
+  background-color: #81b3d2;
+  border: none;
+  color: #ffffff;
+  text-transform: uppercase;
 }
 
 .client-info-list__label {
@@ -353,25 +392,5 @@
   font-size: 18px;
   line-height: 1.4;
   color: #000000;
-}
-
-.wishes-text {
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.4;
-  color: rgba(0, 0, 0, 0.3);
-}
-
-.form__button {
-  padding: 16px 49px;
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 21px;
-  line-height: 1.2;
-  background-color: #81b3d2;
-  border: none;
-  color: #ffffff;
-  text-transform: uppercase;
 }
 /*# sourceMappingURL=style.css.map */
