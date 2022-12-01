@@ -1,3 +1,5 @@
+@use "../variables.scss" as *;
+
 .reasons {
   display: flex;
   flex-direction: column;
@@ -5,7 +7,7 @@
   margin: 0;
   padding: 23px 18px 46px;
   list-style-type: none;
-  color: #000000;
+  color: $black;
 }
 
 .reasons__card-title {
@@ -13,7 +15,7 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 1.4;
-  color: #000000;
+  color: $black;
   text-transform: uppercase;
 }
 
@@ -22,6 +24,6 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 1.5;
-  color: #333333;
+  color: $gray;
   text-transform: uppercase;
 }

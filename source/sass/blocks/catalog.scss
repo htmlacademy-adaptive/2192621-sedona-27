@@ -1,9 +1,11 @@
+@use "../variables.scss" as *;
+
 .catalog__title {
   margin: 0;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.4;
-  color: #000000;
+  color: $black;
   text-transform: uppercase;
 }
 
@@ -13,7 +15,7 @@
   font-size: 14px;
   line-height: 1.5;
   text-transform: uppercase;
-  color: #333333;
+  color: $gray;
 }
 
 .catalog__list {
@@ -28,7 +30,7 @@
   font-size: 14px;
   line-height: 1.5;
   text-transform: uppercase;
-  color: #000000;
+  color: $black;
 }
 
 .catalog__card-description {
@@ -36,7 +38,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 1.5;
-  color: #333333;
+  color: $gray;
 }
 
 .catalog__likes {
@@ -44,5 +46,5 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 1.5;
-  color: #000000;
+  color: $black;
 }

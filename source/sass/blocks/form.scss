@@ -1,3 +1,5 @@
+@use "../variables.scss" as *;
+
 .form__fieldset {
   padding: 0;
   margin: 0;
@@ -9,7 +11,7 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 1.4;
-  color: #000000;
+  color: $black;
   text-transform: uppercase;
 }
 
@@ -35,6 +37,6 @@
   line-height: 1.2;
   background-color: #81b3d2;
   border: none;
-  color: #ffffff;
+  color: $white;
   text-transform: uppercase;
 }

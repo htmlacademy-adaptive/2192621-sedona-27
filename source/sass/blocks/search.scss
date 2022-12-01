@@ -1,16 +1,18 @@
+@use "../variables.scss" as *;
+
 .search__title {
   margin: 0;
   font-weight: 700;
   font-size: 21px;
   line-height: 1.2;
   text-transform: uppercase;
-  color: #000000;
+  color: $black;
 }
 
 .search__description {
   margin: 0;
   text-transform: uppercase;
-  color: #333333;
+  color: $gray;
 }
 
 .search__button {
@@ -21,6 +23,6 @@
   line-height: 1.2;
   text-transform: uppercase;
   text-decoration: none;
-  color: #ffffff;
-  background-color: #81b3d2;
+  color: $white;
+  background-color: $blue;
 }
