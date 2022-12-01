@@ -59,7 +59,7 @@
   text-transform: uppercase;
 }
 
-.advantages__sublist {
+.reasons {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -67,6 +67,24 @@
   padding: 23px 18px 46px;
   list-style-type: none;
   color: #000000;
+}
+
+.reasons__card-title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.4;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.reasons__card-description {
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333333;
+  text-transform: uppercase;
 }
 
 .advantages__container--devil {
@@ -86,5 +104,3 @@
     height: 0;
   }
 }
-
-
