@@ -103,34 +103,6 @@
   text-transform: uppercase;
 }
 
-.reasons {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin: 0;
-  padding: 23px 18px 46px;
-  list-style-type: none;
-  color: #000000;
-}
-
-.reasons__card-title {
-  margin: 0;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.4;
-  color: #000000;
-  text-transform: uppercase;
-}
-
-.reasons__card-description {
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.5;
-  color: #333333;
-  text-transform: uppercase;
-}
-
 .advantages__container--devil {
   display: grid;
   grid-template-columns: 320px;
@@ -392,5 +364,33 @@
   font-size: 18px;
   line-height: 1.4;
   color: #000000;
+}
+
+.reasons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0;
+  padding: 23px 18px 46px;
+  list-style-type: none;
+  color: #000000;
+}
+
+.reasons__card-title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.4;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.reasons__card-description {
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333333;
+  text-transform: uppercase;
 }
 /*# sourceMappingURL=style.css.map */
