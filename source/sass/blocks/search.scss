@@ -1,0 +1,29 @@
+@use "../variables.scss" as *;
+
+.search__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: $black;
+}
+
+.search__description {
+  margin: 0;
+  text-transform: uppercase;
+  color: $gray;
+}
+
+.search__button {
+  display: block;
+  padding: 16px 49px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $white;
+  background-color: $blue;
+}

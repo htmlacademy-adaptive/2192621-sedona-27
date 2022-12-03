@@ -1,0 +1,15 @@
+@use "../variables.scss" as *;
+@use "../global/fonts.scss" as *;
+
+.page__body {
+  text-align: center;
+  width: fit-content;
+  min-height: 100%;
+  background-color: $light-gray;
+  font-family: "PT Sans", "Arial", sans-serif;
+}
+
+.page__container {
+  width: 320px;
+  margin: 0 auto;
+}

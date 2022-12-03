@@ -1,1 +1,15 @@
-// Начните писать стили здесь
+@use "./blocks/page.scss";
+@use "./blocks/header.scss";
+@use "./blocks/nav.scss";
+@use "./blocks/advantages.scss";
+@use "./blocks/main-container.scss";
+@use "./blocks/search.scss";
+@use "./blocks/footer.scss";
+@use "./blocks/catalog.scss";
+@use "./blocks/presentaion.scss";
+@use "./blocks/review.scss";
+@use "./blocks/site-list.scss";
+@use "./blocks/copyright.scss";
+@use "./blocks/form.scss";
+@use "./blocks/client-info-list.scss";
+@use "./blocks/reasons.scss";

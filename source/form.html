@@ -4,9 +4,10 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="page__body">
+<body class="page__body page__container">
   <header class="header">
     <a class="header__logo logo">
       <img class="logo__image" src="img/logotype-phone.svg" width="185" height="96" alt="Город Седона.">
@@ -40,7 +41,7 @@
   <main class="main-container">
     <section class="welcome">
       <h1 class="visually-hidden">Добро пожаловать в Седону.</h1>
-      <img class="welcome__image" src="img/welcome.svg" width="461" height="350"
+      <img class="welcome__image" src="img/welcome.svg" width="282" height="214"
         alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!">
     </section>
     <section class="review">
@@ -55,20 +56,20 @@
             <li class="client-info-list__item">
               <label class="client-info-list__control" for="name">
                 <span class="client-info-list__label">Имя*:</span>
-                <input class="client-info-list__input" type="text" placeholder="Имя" id="name" name="name" required>
+                <input class="client-info-list__input" type="text" placeholder="Пётр" id="name" name="name" required>
               </label>
             </li>
             <li class="client-info-list__item">
               <label class="client-info-list__control" for="surname">
                 <span class="client-info-list__label">Фамилия*:</span>
-                <input class="client-info-list__input" type="text" placeholder="Фамилия" id="surname" name="surname"
+                <input class="client-info-list__input" type="text" placeholder="Пустота" id="surname" name="surname"
                   required>
               </label>
             </li>
             <li class="client-info-list__item">
               <label class="client-info-list__control" for="patronymic">
                 <span class="client-info-list__label">Отчество:</span>
-                <input class="client-info-list__input" type="text" placeholder="Отчество" id="patronymic"
+                <input class="client-info-list__input" type="text" placeholder="Викторович" id="patronymic"
                   name="patronymic">
               </label>
             </li>
@@ -98,19 +99,19 @@
           <ul class="form__list client-info-list">
             <li class="client-info-list__item">
               <label class="client-info-list__control" for="good">
-                <span class="client-info-list__label">Скорее положительное</span>
+                <span class="client-info-list__opinion">Скорее положительное</span>
                 <input class="client-info-list__input" type="radio" name="opinion" id="good" value="good" checked>
               </label>
             </li>
             <li class="client-info-list__item">
               <label class="client-info-list__control" for="bad">
-                <span class="client-info-list__label">Скорее отрицательное</span>
+                <span class="client-info-list__opinion">Скорее отрицательное</span>
                 <input class="client-info-list__input" type="radio" name="opinion" id="bad" value="bad">
               </label>
             </li>
             <li class="client-info-list__item">
               <label class="client-info-list__control" for="difficult-to-answer">
-                <span class="client-info-list__label">Затрудняюсь ответить</span>
+                <span class="client-info-list__opinion">Затрудняюсь ответить</span>
                 <input class="client-info-list__input" type="radio" name="opinion" id="difficult-to-answer"
                   value="difficult-to-answer">
               </label>
@@ -122,25 +123,25 @@
           <ul class="form__list client-info-list">
             <li class="client-info-list__item">
               <label class="client-info-list__control" for="bridge">
-                <span class="client-info-list__label">Мост Дьявола</span>
+                <span class="client-info-list__attraction">Мост Дьявола</span>
                 <input class="client-info-list__input" type="checkbox" id="bridge" name="bridge" checked>
               </label>
             </li>
             <li class="client-info-list__item">
               <label class="client-info-list__control" for="bell">
-                <span class="client-info-list__label">Гора-Колокол</span>
+                <span class="client-info-list__attraction">Гора-Колокол</span>
                 <input class="client-info-list__input" type="checkbox" id="bell" name="bell" checked>
               </label>
             </li>
             <li class="client-info-list__item">
               <label class="client-info-list__control" for="slide-yard">
-                <span class="client-info-list__label">Слайд-парк</span>
+                <span class="client-info-list__attraction">Слайд-парк</span>
                 <input class="client-info-list__input" type="checkbox" id="slide-yard" name="slide-yard" checked>
               </label>
             </li>
             <li class="client-info-list__item">
               <label class="client-info-list__control" for="rocks">
-                <span class="client-info-list__label">Красные скалы</span>
+                <span class="client-info-list__attraction">Красные скалы</span>
                 <input class="client-info-list__input" type="checkbox" id="rocks" name="rocks">
               </label>
             </li>
@@ -148,8 +149,9 @@
         </fieldset>
         <fieldset class="form__fieldset">
           <legend class="form__legend">Опишите свои эмоции:</legend>
-          <label for="wishes"> <span class="visually-hidden">Написать отзыв.</span>
-            <textarea class="" name="wishes" id="wishes" placeholder="Опишите подробно все свои восторги"></textarea>
+          <label class="form__wishes" for="wishes"><span class="visually-hidden">Написать отзыв.</span>
+            <textarea class="form__wishes-text" name="wishes" id="wishes"
+              placeholder="Опишите подробно все свои восторги"></textarea>
           </label>
         </fieldset>
         <button class="form__button button" type="submit">Отправить отзыв</button>
