@@ -1,9 +1,12 @@
-@use "../variables.scss" as *;
+@use "../global/variables.scss" as *;
+
+.advantages__wrapper {
+  padding: 32px 18px 16px;
+}
 
 .advantages__title {
-  padding-top: 32px;
-  padding-bottom: 35px;
   margin: 0;
+  margin-bottom: 35px;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.4;
@@ -11,7 +14,6 @@
 }
 
 .advantages__description {
-  padding-bottom: 16px;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
@@ -24,6 +26,12 @@
   padding: 0;
   counter-reset: list1;
   list-style-type: none;
+}
+
+.advantages__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .advantages__container {

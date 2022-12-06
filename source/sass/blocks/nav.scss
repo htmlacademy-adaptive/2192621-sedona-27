@@ -1,4 +1,9 @@
+@use "../global/variables.scss" as *;
+
 .nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
 }
 
@@ -7,11 +12,28 @@
 }
 
 .nav__list {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  gap: 1px;
+  width: 320px;
   padding: 0;
   margin: 0;
   list-style-type: none;
+}
+
+@media (min-width: $tablet-width) {
+  .nav__list {
+    display: flex;
+    justify-content: space-around;
+    width: $tablet-width;
+  }
+
+  .nav__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .nav__list {
+    display: flex;
+    justify-content: space-around;
+    width: $desktop-width;
+  }
 }

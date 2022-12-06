@@ -1,15 +1,15 @@
-@use "../variables.scss" as *;
+@use "../global/variables.scss" as *;
 @use "../global/fonts.scss" as *;
 
 .page__body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
   text-align: center;
   width: fit-content;
   min-height: 100%;
   background-color: $light-gray;
   font-family: "PT Sans", "Arial", sans-serif;
-}
-
-.page__container {
-  width: 320px;
-  margin: 0 auto;
 }
