@@ -22,6 +22,8 @@
 
     &__logo {
       justify-self: center;
+      grid-column: 1/2;
+      grid-row: 1/2;
     }
   }
 }
