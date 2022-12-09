@@ -10,5 +10,14 @@
 .header__logo {
   position: relative;
   margin-bottom: -15px;
+  justify-self: center;
   z-index: 1;
+}
+
+@media (min-width: $tablet-width) {
+  .header {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: $tablet-width;
+  }
 }

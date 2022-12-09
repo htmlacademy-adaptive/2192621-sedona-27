@@ -1,22 +1,29 @@
 @use "../variables.scss" as *;
 
+.advantages__wrapper {
+  padding: 32px 18px 16px;
+  text-align: center;
+}
+
 .advantages__title {
-  padding-top: 32px;
-  padding-bottom: 35px;
   margin: 0;
+  margin-bottom: 35px;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.4;
+  text-align: center;
   color: $black;
+  text-transform: uppercase;
 }
 
 .advantages__description {
-  padding-bottom: 16px;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.5;
-  color: $gray;
+  color: $dark-gray;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .advantages__list {
@@ -26,31 +33,38 @@
   list-style-type: none;
 }
 
-.advantages__container {
+.advantages__item {
   display: grid;
   grid-template-columns: 320px;
-  padding: 33px 18px 40px;
+  color: $black;
+  background-color: $light-gray;
+}
+
+.advantages__container {
   color: $white;
   background-color: $blue;
-
-  &::before {
-    counter-increment: list1;
-    content: counter(list1) ". ";
-    justify-self: center;
-    margin-top: 11px;
-    margin-bottom: 17px;
-    width: 0;
-    height: 0;
-  }
+  padding: 33px 18px 40px;
 }
 
 .advantages__card-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 0;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.4;
-  order: -1;
   text-transform: uppercase;
+  text-align: center;
+
+  &::after {
+    counter-increment: list1;
+    content: counter(list1) ". ";
+    margin-top: 11px;
+    margin-bottom: 17px;
+    width: 0;
+    height: 21px;
+  }
 }
 
 .advantages__card-description {
@@ -59,22 +73,27 @@
   font-size: 14px;
   line-height: 1.5;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .advantages__container--devil {
-  display: grid;
-  grid-template-columns: 320px;
   padding: 37px 18px;
-  color: $white;
-  background-color: $blue;
+}
 
-  &::before {
-    counter-increment: list1;
-    content: counter(list1) ". ";
-    justify-self: center;
-    margin-top: 11px;
-    margin-bottom: 17px;
-    width: 0;
-    height: 0;
-  }
+.advantages__container--square {
+  padding: 24px 18px;
+  color: $black;
+  background-color: $gray;
+}
+
+.advantages__container--road {
+  padding: 24px 18px;
+  color: $black;
+  background-color: $gray;
+}
+
+.advantages__container--tourist {
+  padding: 24px 18px 28px;
+  color: $black;
+  background-color: $gray;
 }

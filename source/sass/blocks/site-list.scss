@@ -15,3 +15,16 @@
   text-transform: uppercase;
   text-decoration: none;
 }
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: $tablet-width;
+  }
+
+  &__item {
+    background-color: none;
+  }
+}

@@ -3,15 +3,23 @@
 .reasons {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   margin: 0;
   padding: 23px 18px 46px;
+  row-gap: 25px;
   list-style-type: none;
   color: $black;
+  background-color: $light-gray;
+}
+
+.reasons__item {
+  display: grid;
+  grid-template-columns: 47px 1fr;
 }
 
 .reasons__card-title {
-  margin: 0;
+  grid-area: 1/2/2/3;
+  margin-top: 8px;
+  margin-bottom: 16px;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.4;
@@ -20,10 +28,23 @@
 }
 
 .reasons__card-description {
+  grid-area: 2/2/3/3;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.5;
-  color: $gray;
+  color: $dark-gray;
   text-transform: uppercase;
+}
+
+.reasons__item--housing {
+  background: url("../../img/hotels.svg") no-repeat left 0;
+}
+
+.reasons__item--food {
+  background: url("../../img/food.svg") no-repeat left 0;
+}
+
+.reasons__item--souvenir {
+  background: url("../../img/souvenirs.svg") no-repeat left 0;
 }
