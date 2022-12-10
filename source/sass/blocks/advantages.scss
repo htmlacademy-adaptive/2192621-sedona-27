@@ -1,8 +1,33 @@
 @use "../variables.scss" as *;
 
+.advantages {
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+  }
+}
+
 .advantages__wrapper {
   padding: 32px 18px 16px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 47.5px 124px 55px;
+    width: $tablet-width;
+    box-sizing: border-box;
+
+    br {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 59px 359px 44px 357px;
+    width: $desktop-width;
+  }
 }
 
 .advantages__title {
@@ -38,12 +63,29 @@
   grid-template-columns: 320px;
   color: $black;
   background-color: $light-gray;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: $tablet-width;
+  }
 }
 
 .advantages__container {
   color: $white;
   background-color: $blue;
   padding: 33px 18px 40px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    padding: 52px 33px 31px;
+  }
+}
+
+.advantages__card-container {
+  @media (min-width: $tablet-width) {
+    grid-column: 2/4;
+  }
 }
 
 .advantages__card-title {
@@ -78,22 +120,46 @@
 
 .advantages__container--devil {
   padding: 37px 18px;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 3/4;
+  }
+}
+
+.advantages__card-image--devil {
+  @media (min-width: $tablet-width) {
+    grid-area: 1/1/2/3;
+  }
 }
 
 .advantages__container--square {
   padding: 24px 18px;
   color: $black;
   background-color: $gray;
+
+  @media (min-width: $tablet-width) {
+    padding: 52px 33px;
+  }
 }
 
 .advantages__container--road {
   padding: 24px 18px;
   color: $black;
   background-color: $gray;
+
+  @media (min-width: $tablet-width) {
+    grid-area: 1/2/2/3;
+    padding: 41px 33px;
+  }
 }
 
 .advantages__container--tourist {
   padding: 24px 18px 28px;
   color: $black;
   background-color: $gray;
+
+  @media (min-width: $tablet-width) {
+    grid-area: 1/3/2/4;
+    padding: 52px 33px;
+  }
 }
