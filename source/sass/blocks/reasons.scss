@@ -12,8 +12,14 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-area: 2/1/3/4;
+    grid-template-columns: repeat(3, 256px);
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+    padding: 0;
   }
 }
 
@@ -37,6 +43,12 @@
     background-size: 77px 72px;
     background-position: center 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 169px 50px 69px;
+    background-size: 79px 72px;
+    background-position: center 69px;
+  }
 }
 
 .reasons__item--food {
@@ -47,6 +59,12 @@
     background-size: 80px 68px;
     background-position: center 62px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 166px 50px 71px;
+    background-size: 73px 68px;
+    background-position: center 72px;
+  }
 }
 
 .reasons__item--souvenir {
@@ -56,6 +74,12 @@
     padding: 153px 33px 64px;
     background-size: 66px 75px;
     background-position: center 64px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 170px 50px 67px;
+    background-size: 77px 75px;
+    background-position: center 69px;
   }
 }
 

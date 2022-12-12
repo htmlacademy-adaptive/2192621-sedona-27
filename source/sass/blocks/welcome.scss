@@ -1,0 +1,14 @@
+@use "../variables.scss" as *;
+
+.welcome__image {
+  display: block;
+  padding: 90px 19px 28px;
+
+  @media (min-width: $tablet-width) {
+    padding: 77px 154px 34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 78px 370px 33px;
+  }
+}

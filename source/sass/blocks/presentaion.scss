@@ -1,7 +1,15 @@
 @use "../variables.scss" as *;
 
+.presentaion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .presentaion__title {
   margin: 0;
+  margin-top: 17px;
+  margin-bottom: 35px;
   font-weight: 700;
   font-size: 21px;
   line-height: 1.2;
@@ -11,9 +19,11 @@
 
 .presentaion__description {
   margin: 0;
+  margin-bottom: 38px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.5;
   color: $dark-gray;
   text-transform: uppercase;
+  text-align: center;
 }
