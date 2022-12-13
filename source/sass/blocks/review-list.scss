@@ -1,0 +1,31 @@
+@use "../variables.scss" as *;
+
+.review-list {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+.review-list__control {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+}
+
+.review-list__text {
+  grid-column: 2/3;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.4;
+  color: $black;
+}
+
+.review-list__input {
+  grid-area: 1/1/2/2;
+  margin: 0;
+}

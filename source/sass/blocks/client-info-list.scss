@@ -1,5 +1,10 @@
 @use "../variables.scss" as *;
 
+.client-info-list__control {
+  display: grid;
+  grid-template-columns: 1fr min-content;
+}
+
 .client-info-list__label {
   font-weight: 400;
   font-size: 14px;
@@ -9,23 +14,30 @@
 }
 
 .client-info-list__input {
+  box-sizing: border-box;
+  grid-column: 1/2;
+  padding: 16px;
+  padding-right: 0;
   font-family: inherit;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.4px;
+  border: none;
   color: $black;
 }
 
-.client-info-list__opinion {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.4;
-  color: $black;
+.client-info-list__button-phone {
+  background: $gray-90 url("../../img/phone.svg") no-repeat center;
+  width: 58px;
+  height: 58px;
+  padding: 0;
+  border: none;
 }
 
-.client-info-list__attraction {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.4;
-  color: $black;
+.client-info-list__button-mail {
+  background: $gray-90 url("../../img/letter.svg") no-repeat center;
+  width: 58px;
+  height: 58px;
+  padding: 0;
+  border: none;
 }

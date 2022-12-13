@@ -15,6 +15,13 @@
   line-height: 1.2;
   color: $black;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-bottom: 30px;
+    font-size: 30px;
+    line-height: 0.86;
+  }
 }
 
 .presentaion__description {
@@ -26,4 +33,18 @@
   color: $dark-gray;
   text-transform: uppercase;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 66px;
+    padding: 0 162px;
+
+    br {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 378px;
+    margin-bottom: 64px;
+  }
 }
