@@ -27,6 +27,7 @@
 .presentaion__description {
   margin: 0;
   margin-bottom: 38px;
+  padding: 0 26px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.5;
@@ -34,17 +35,19 @@
   text-transform: uppercase;
   text-align: center;
 
+  br {
+    display: none;
+  }
+
   @media (min-width: $tablet-width) {
     margin-bottom: 66px;
-    padding: 0 162px;
 
     br {
-      display: none;
+      display: block;
     }
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 378px;
     margin-bottom: 64px;
   }
 }

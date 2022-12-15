@@ -7,13 +7,11 @@
 
   @media (min-width: $tablet-width) {
     grid-template-columns: repeat(2, 1fr);
-    padding: 0;
     column-gap: 88px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(2, 1fr);
-    padding: 0;
     column-gap: 128px;
   }
 }

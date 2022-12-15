@@ -1,38 +1,48 @@
 @use "../variables.scss" as *;
 
 .footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 320px;
+  margin: 0 auto;
   text-align: center;
-  background-color: $white;
+  background-color: #ffffff;
 
   @media (min-width: $tablet-width) {
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-    align-items: center;
-    padding: 36px 71px 36px 45px;
-  }
+    width: $tablet-width;
 
-  @media (min-width: $desktop-width) {
-    padding: 36px 136px 36px 104px;
+    @media (min-width: $desktop-width) {
+      width: $desktop-width;
+    }
   }
 }
 
 .footer__link {
+  grid-column: 1/-1;
   font-weight: 700;
   font-size: 21px;
   line-height: 1.2;
   text-transform: uppercase;
   text-decoration: none;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1/2;
+  }
 }
 
 .footer__list {
-  display: flex;
-  justify-content: center;
-  gap: 6px;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column: 1/-1;
+  align-items: center;
   margin: 0;
   padding: 0;
   list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 2/3;
+  }
 }
 
 .social__link {
@@ -42,5 +52,10 @@
 }
 
 .footer__copyright {
+  grid-column: 1/-1;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 3/4;
+  }
 }

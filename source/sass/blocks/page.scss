@@ -2,17 +2,9 @@
 @use "../global/fonts.scss" as *;
 
 .page__body {
+  width: 100%;
+  margin: 0;
   min-height: 100%;
-  background-color: $light-gray;
   font-family: "PT Sans", "Arial", sans-serif;
-  width: 320px;
-  margin: 0 auto;
-
-  @media (min-width: $tablet-width) {
-    width: $tablet-width;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: $desktop-width;
-  }
+  background-color: $light-gray;
 }

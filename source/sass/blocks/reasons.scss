@@ -8,11 +8,12 @@
   row-gap: 25px;
   list-style-type: none;
   color: $black;
-  background-color: $light-gray;
+  background-color: $white;
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: repeat(3, 256px);
+    grid-template-columns: repeat(3, 1fr);
+    grid-column: 1/-1;
     padding: 0;
   }
 
@@ -84,7 +85,7 @@
 }
 
 .reasons__card-title {
-  grid-area: 1/2/2/3;
+  grid-column: 2/3;
   margin-top: 8px;
   margin-bottom: 16px;
   font-weight: 700;
@@ -95,7 +96,7 @@
 }
 
 .reasons__card-description {
-  grid-area: 2/2/3/3;
+  grid-column: 2/3;
   margin: 0;
   font-weight: 400;
   font-size: 14px;

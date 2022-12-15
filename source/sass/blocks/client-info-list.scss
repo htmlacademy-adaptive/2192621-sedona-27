@@ -5,6 +5,24 @@
   grid-template-columns: 1fr min-content;
 }
 
+.client-info-list__control--phone::after {
+  content: "";
+  background: $gray-90 url("../../img/phone.svg") no-repeat center;
+  width: 58px;
+  height: 58px;
+  padding: 0;
+  border: none;
+}
+
+.client-info-list__control--mail::after {
+  content: "";
+  background: $gray-90 url("../../img/letter.svg") no-repeat center;
+  width: 58px;
+  height: 58px;
+  padding: 0;
+  border: none;
+}
+
 .client-info-list__label {
   font-weight: 400;
   font-size: 14px;
@@ -24,20 +42,4 @@
   line-height: 1.4px;
   border: none;
   color: $black;
-}
-
-.client-info-list__button-phone {
-  background: $gray-90 url("../../img/phone.svg") no-repeat center;
-  width: 58px;
-  height: 58px;
-  padding: 0;
-  border: none;
-}
-
-.client-info-list__button-mail {
-  background: $gray-90 url("../../img/letter.svg") no-repeat center;
-  width: 58px;
-  height: 58px;
-  padding: 0;
-  border: none;
 }
