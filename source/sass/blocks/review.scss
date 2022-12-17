@@ -1,19 +1,58 @@
 @use "../variables.scss" as *;
 
+.review {
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 160px;
+  }
+}
+
 .review__title {
   margin: 0;
+  margin-bottom: 24px;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.4;
   color: $black;
   text-transform: uppercase;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+    font-size: 30px;
+    line-height: 0.86;
+  }
 }
 
 .review__description {
   margin: 0;
+  margin-bottom: 53px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.5;
-  color: $gray;
+  color: $dark-gray;
   text-transform: uppercase;
+  text-align: center;
+
+  br {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 102px;
+    line-height: 1.7;
+
+    br {
+      display: block;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 67px;
+  }
 }

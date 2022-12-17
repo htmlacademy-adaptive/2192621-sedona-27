@@ -1,17 +1,82 @@
+@use "../variables.scss" as *;
+@use "../global/fonts.scss" as *;
+
 .nav {
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    grid-area: 1/1/2/2;
+  }
 }
 
 .nav__toggle {
   position: absolute;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .nav__list {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   text-align: center;
   gap: 1px;
   padding: 0;
   margin: 0;
   list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+  }
+}
+
+.nav__item {
+  background-color: $blue;
+
+  @media (min-width: $tablet-width) {
+    background-color: $white;
+
+    &:nth-child(3n+3) {
+      margin-left: auto;
+    }
+  }
+}
+
+.nav__link {
+  display: block;
+  padding-top: 17px;
+  padding-bottom: 12px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.4;
+  color: $white;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    width: 153px;
+    padding-top: 18px;
+    padding-bottom: 17px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.5;
+    color: $black;
+
+    &--active {
+      color: $light-brown;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 240px;
+  }
 }

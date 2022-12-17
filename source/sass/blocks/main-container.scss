@@ -1,5 +1,15 @@
+@use "../variables.scss" as *;
+
 .main-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: 320px;
+  margin: 0 auto;
+  background-color: $white;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+  }
 }

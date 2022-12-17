@@ -1,31 +1,46 @@
 @use "../variables.scss" as *;
 
+.client-info-list__control {
+  display: grid;
+  grid-template-columns: 1fr min-content;
+}
+
+.client-info-list__control--phone::after {
+  content: "";
+  background: $gray-90 url("../img/phone.svg") no-repeat center;
+  width: 58px;
+  height: 58px;
+  padding: 0;
+  border: none;
+}
+
+.client-info-list__control--mail::after {
+  content: "";
+  background: $gray-90 url("../img/letter.svg") no-repeat center;
+  width: 58px;
+  height: 58px;
+  padding: 0;
+  border: none;
+}
+
 .client-info-list__label {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.5;
-  color: $gray;
+  color: $dark-gray;
   text-transform: uppercase;
 }
 
 .client-info-list__input {
+  box-sizing: border-box;
+  grid-column: 1/2;
+  padding: 16px;
+  padding-right: 0;
   font-family: inherit;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.4px;
-  color: $black;
-}
-
-.client-info-list__opinion {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.4;
-  color: $black;
-}
-
-.client-info-list__attraction {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.4;
+  border: none;
+  background-color: $light-gray;
   color: $black;
 }

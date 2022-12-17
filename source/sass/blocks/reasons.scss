@@ -3,15 +3,85 @@
 .reasons {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   margin: 0;
   padding: 23px 18px 46px;
+  row-gap: 25px;
   list-style-type: none;
   color: $black;
+  background-color: $white;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column: 1/-1;
+    padding: 0;
+  }
+}
+
+.reasons__item {
+  display: grid;
+  grid-template-columns: 47px 1fr;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}
+
+.reasons__item--housing {
+  background: url("../../img/hotels.svg") no-repeat left 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 158px 33px 60px;
+    background-size: 77px 72px;
+    background-position: center 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 169px 50px 69px;
+    background-size: 79px 72px;
+    background-position: center 69px;
+  }
+}
+
+.reasons__item--food {
+  background: url("../../img/food.svg") no-repeat left 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 156px 33px 61px;
+    background-size: 80px 68px;
+    background-position: center 62px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 166px 50px 71px;
+    background-size: 73px 68px;
+    background-position: center 72px;
+  }
+}
+
+.reasons__item--souvenir {
+  background: url("../../img/souvenirs.svg") no-repeat left 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 153px 33px 64px;
+    background-size: 66px 75px;
+    background-position: center 64px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 170px 50px 67px;
+    background-size: 77px 75px;
+    background-position: center 69px;
+  }
 }
 
 .reasons__card-title {
-  margin: 0;
+  grid-column: 2/3;
+  margin-top: 8px;
+  margin-bottom: 16px;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.4;
@@ -20,10 +90,23 @@
 }
 
 .reasons__card-description {
+  grid-column: 2/3;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.5;
-  color: $gray;
+  color: $dark-gray;
   text-transform: uppercase;
+
+  br {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    text-align: center;
+
+    br {
+      display: block;
+    }
+  }
 }
