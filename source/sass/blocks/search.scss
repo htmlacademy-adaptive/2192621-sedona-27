@@ -10,7 +10,8 @@
 }
 
 .search__title {
-  padding: 38px 29px 30px;
+  padding-top: 38px;
+  padding-bottom: 30px;
   margin: 0;
   font-weight: 700;
   font-size: 21px;
@@ -20,13 +21,14 @@
   color: $black;
 
   @media (min-width: $tablet-width) {
+    padding-top: 61px;
     font-size: 30px;
     line-height: 0.86;
   }
 }
 
 .search__description {
-  padding: 0 29px 32px;
+  padding: 0 18px 32px;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
@@ -40,11 +42,15 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 32px;
+    padding-bottom: 40px;
 
     br {
       display: block;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 45px;
   }
 }
 
@@ -61,6 +67,18 @@
   text-decoration: none;
   color: $white;
   background-color: $blue;
+
+  &:hover {
+    background-color: $blue-58;
+  }
+
+  &:active {
+    background-color: $blue-54;
+  }
+
+  &:disabled {
+    background-color: $light-gray-90;
+  }
 
   @media (min-width: $tablet-width) {
     margin-bottom: 58px;

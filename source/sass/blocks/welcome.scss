@@ -1,5 +1,9 @@
 @use "../variables.scss" as *;
 
+.welcome {
+  padding-top: 90px;
+}
+
 .welcome__image {
   display: block;
   margin: 0 auto;

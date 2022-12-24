@@ -2,19 +2,102 @@
 @use "../global/fonts.scss" as *;
 
 .nav {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  grid-area: 1/1/2/2;
   width: 100%;
-
-  @media (min-width: $tablet-width) {
-    grid-area: 1/1/2/2;
-  }
+  min-height: 56px;
 }
 
 .nav__toggle {
   position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  width: 62px;
+  height: 56px;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
 
   @media (min-width: $tablet-width) {
     display: none;
   }
+}
+
+.nav--closed .nav__toggle::before {
+  content: "";
+  position: absolute;
+  background: url("../img/opened-button.svg") no-repeat center;
+  top: 17px;
+  left: 20px;
+  width: 23px;
+  height: 22px;
+}
+
+.nav--closed .nav__toggle:hover::before {
+  opacity: 0.6;
+}
+
+.nav--closed .nav__toggle:active::before {
+  opacity: 0.3;
+}
+
+.nav--closed .nav__item {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+}
+
+.nav--opened .nav__list {
+  position: absolute;
+  z-index: 1;
+}
+
+.nav--opened .nav__list::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  width: 100%;
+  height: 7px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+
+  @media (min-width: $tablet-width) {
+    background: none;
+  }
+}
+
+.nav--nojs .nav__toggle {
+  display: none;
+}
+
+.nav--nojs .nav__list {
+  position: static;
+  min-height: 0;
+}
+
+.nav--nojs .nav__item {
+  display: block;
+}
+
+.nav--opened .nav__toggle::before {
+  position: absolute;
+  content: "";
+  background: url("../img/closed-button.svg") no-repeat center;
+  top: 15px;
+  left: 18px;
+  width: 27px;
+  height: 27px;
+}
+
+.nav--opened .nav__toggle:hover::before {
+  opacity: 0.6;
+}
+
+.nav--opened .nav__toggle:active::before {
+  opacity: 0.3;
 }
 
 .nav__list {
@@ -22,15 +105,13 @@
   flex-wrap: wrap;
   flex-direction: column;
   text-align: center;
-  gap: 1px;
+  width: 100%;
   padding: 0;
   margin: 0;
   list-style-type: none;
 
   @media (min-width: $tablet-width) {
-    display: flex;
     flex-direction: row;
-    justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
@@ -40,6 +121,16 @@
 
 .nav__item {
   background-color: $blue;
+
+  @media (max-width: $mobile-width-only) {
+    &:hover {
+      background-color: $blue-58;
+    }
+
+    &:active {
+      background-color: $blue-54;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     background-color: $white;
@@ -60,6 +151,8 @@
   color: $white;
   text-transform: uppercase;
   text-decoration: none;
+  border-bottom: 1px solid #678fa8;
+  border-top: 1px solid #9ac2db;
 
   @media (min-width: $tablet-width) {
     width: 153px;
@@ -70,6 +163,16 @@
     font-size: 14px;
     line-height: 1.5;
     color: $black;
+    border: none;
+
+    &:hover {
+      color: $blue;
+    }
+
+    &:active {
+      color: $black;
+      opacity: 0.3;
+    }
 
     &--active {
       color: $light-brown;

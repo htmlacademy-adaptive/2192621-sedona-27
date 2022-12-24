@@ -1,9 +1,30 @@
 @use "../variables.scss" as *;
 
 .copyright__text {
+  margin-right: 12px;
   text-transform: uppercase;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.5;
   color: $black;
+
+  &:hover {
+    color: $blue;
+  }
+
+  &:active {
+    color: $gray-70;
+  }
+}
+
+.copyright__icon {
+  fill: $black;
+
+  &:hover {
+    fill: $blue;
+  }
+
+  &:active {
+    fill: $gray-70;
+  }
 }

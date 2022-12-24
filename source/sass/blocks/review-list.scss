@@ -12,13 +12,20 @@
   }
 }
 
+.review-list__item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
 .review-list__control {
   display: grid;
+  position: relative;
   grid-template-columns: min-content 1fr;
+  padding-left: 62px;
 }
 
 .review-list__text {
   grid-column: 2/3;
+  padding: 10px 0;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.4;
@@ -28,4 +35,56 @@
 .review-list__input {
   grid-area: 1/1/2/2;
   margin: 0;
+}
+
+.review-list__control-mark {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 46px;
+  height: 46px;
+  background-color: $light-gray;
+  border-radius: 50%;
+
+  &:hover {
+    background-color: $light-gray-90;
+  }
+
+  &:active {
+    background-color: $gray-84;
+  }
+}
+
+.review-list__control-mark--checkbox {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 46px;
+  height: 46px;
+  background-color: $light-gray;
+  border-radius: 4px;
+}
+
+.review-list__input[type="radio"]:checked + .review-list__control-mark::after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: $dark-gray;
+}
+
+.review-list__input[type="checkbox"]:checked + .review-list__control-mark--checkbox::after {
+  position: absolute;
+  content: "";
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 22px;
+  height: 16px;
+  background: url("../img/check.svg") no-repeat center;
 }
