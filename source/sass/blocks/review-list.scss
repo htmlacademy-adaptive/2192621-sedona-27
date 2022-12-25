@@ -20,30 +20,23 @@
   display: grid;
   position: relative;
   grid-template-columns: min-content 1fr;
-  padding-left: 62px;
 }
 
 .review-list__text {
   grid-column: 2/3;
   padding: 10px 0;
+  margin-left: 16px;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.4;
   color: $black;
 }
 
-.review-list__input {
-  grid-area: 1/1/2/2;
-  margin: 0;
-}
-
 .review-list__control-mark {
-  position: absolute;
   display: flex;
+  grid-area: 1/1/2/2;
   justify-content: center;
   align-items: center;
-  top: 50%;
-  transform: translate(0, -50%);
   width: 46px;
   height: 46px;
   background-color: $light-gray;
@@ -59,9 +52,6 @@
 }
 
 .review-list__control-mark--checkbox {
-  position: absolute;
-  top: 50%;
-  transform: translate(0, -50%);
   width: 46px;
   height: 46px;
   background-color: $light-gray;
@@ -79,11 +69,7 @@
 }
 
 .review-list__input[type="checkbox"]:checked + .review-list__control-mark--checkbox::after {
-  position: absolute;
   content: "";
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
   width: 22px;
   height: 16px;
   background: url("../img/check.svg") no-repeat center;
