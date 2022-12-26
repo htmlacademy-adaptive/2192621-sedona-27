@@ -14,5 +14,9 @@
 
   &:active {
     background-color: $blue-54;
+
+    .social__icon {
+      opacity: 0.3;
+    }
   }
 }

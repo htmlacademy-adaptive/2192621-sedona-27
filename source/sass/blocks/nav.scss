@@ -69,16 +69,13 @@
   }
 }
 
-// .nav--nojs .header__logo {
-//   grid-area: 2/1/3/2;
-// }
-
 .nav--nojs .nav__toggle {
   display: none;
 }
 
 .nav--nojs .nav__list {
   position: static;
+  z-index: 1;
   min-height: 0;
 }
 

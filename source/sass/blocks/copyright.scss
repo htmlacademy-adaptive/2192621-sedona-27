@@ -6,25 +6,25 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 1.5;
+  text-decoration: none;
   color: $black;
-
-  &:hover {
-    color: $blue;
-  }
-
-  &:active {
-    color: $gray-70;
-  }
 }
 
 .copyright__icon {
-  fill: $black;
+  display: block;
+  color: $black;
+}
 
-  &:hover {
-    fill: $blue;
+.copyright {
+  text-decoration: none;
+
+  &:hover .copyright__text,
+  &:hover .copyright__icon {
+    color: $blue;
   }
 
-  &:active {
-    fill: $gray-70;
+  &:active .copyright__text,
+  &:active .copyright__icon {
+    color: $gray-70;
   }
 }

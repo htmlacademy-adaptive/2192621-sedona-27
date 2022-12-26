@@ -30,14 +30,35 @@
 }
 
 .introduce {
+  position: relative;
   padding-bottom: 39px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 48px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 48px;
+      right: -43px;
+      width: 1px;
+      height: 100%;
+      background-color: $gray-86;
+    }
   }
 
   @media (min-width: $desktop-width) {
     padding-bottom: 56px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 56px;
+      right: -63px;
+      width: 1px;
+      height: 100%;
+      background-color: $gray-86;
+    }
   }
 }
 
@@ -47,33 +68,152 @@
 
 .impression {
   padding-bottom: 24px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 48px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -40.5px;
+      width: 123px;
+      height: 1px;
+      background-color: $gray-86;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -40.5px;
+      right: 0;
+      width: 123px;
+      height: 1px;
+      background-color: $gray-86;
+    }
   }
 
   @media (min-width: $desktop-width) {
     padding-bottom: 56px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -40.5px;
+      width: 280px;
+      height: 1px;
+      background-color: $gray-86;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -40.5px;
+      right: 0;
+      width: 280px;
+      height: 1px;
+      background-color: $gray-86;
+    }
   }
 }
 
 .attraction {
+  position: relative;
   padding-bottom: 24px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 42px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -54px;
+      width: 123px;
+      height: 1px;
+      background-color: $gray-86;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -54px;
+      right: 0;
+      width: 123px;
+      height: 1px;
+      background-color: $gray-86;
+    }
   }
 
   @media (min-width: $desktop-width) {
     padding-bottom: 56px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -54px;
+      width: 280px;
+      height: 1px;
+      background-color: $gray-86;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -54px;
+      right: 0;
+      width: 280px;
+      height: 1px;
+      background-color: $gray-86;
+    }
   }
 }
 
 .emotions {
+  position: relative;
   padding-bottom: 56px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 48px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -40.5px;
+      width: 123px;
+      height: 1px;
+      background-color: $gray-86;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -40.5px;
+      right: 0;
+      width: 123px;
+      height: 1px;
+      background-color: $gray-86;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      content: "";
+      position: absolute;
+      top: -40.5px;
+      width: 280px;
+      height: 1px;
+      background-color: $gray-86;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -40.5px;
+      right: 0;
+      width: 280px;
+      height: 1px;
+      background-color: $gray-86;
+    }
   }
 }
 

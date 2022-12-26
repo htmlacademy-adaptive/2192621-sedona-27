@@ -2,6 +2,7 @@
 
 .header {
   display: grid;
+  position: relative;
   grid-template-columns: 1fr;
   width: 320px;
   margin: 0 auto;
@@ -17,9 +18,8 @@
 }
 
 .header__logo {
-  position: relative;
+  position: absolute;
   grid-area: 1/1/2/2;
-  margin-bottom: -44px;
   justify-self: center;
   z-index: 1;
 }
