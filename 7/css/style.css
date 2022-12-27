@@ -138,6 +138,11 @@ img {
 .header__logo--nojs {
   top: 225px;
 }
+@media (min-width: 768px) {
+  .header__logo--nojs {
+    top: 0;
+  }
+}
 
 .nav--nojs .nav__toggle {
   display: none;
