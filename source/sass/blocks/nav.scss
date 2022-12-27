@@ -71,6 +71,10 @@
 
 .header__logo--nojs {
   top: 225px;
+
+  @media (min-width: $tablet-width) {
+    top: 0;
+  }
 }
 
 .nav--nojs .nav__toggle {
