@@ -1,5 +1,9 @@
 @use "../variables.scss" as *;
 
+.client-info-list__item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
 .client-info-list__control {
   display: grid;
   grid-template-columns: 1fr min-content;
