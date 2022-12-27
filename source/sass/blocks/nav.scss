@@ -69,13 +69,16 @@
   }
 }
 
+.header__logo--nojs {
+  top: 225px;
+}
+
 .nav--nojs .nav__toggle {
   display: none;
 }
 
 .nav--nojs .nav__list {
   position: static;
-  z-index: 1;
   min-height: 0;
 }
 

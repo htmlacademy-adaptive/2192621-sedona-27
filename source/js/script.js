@@ -1,7 +1,9 @@
 let nav = document.querySelector('.nav');
 let navToggle = document.querySelector('.nav__toggle');
+let headerLogo = document.querySelector('.header__logo');
 
 nav.classList.remove('nav--nojs');
+headerLogo.classList.remove('header__logo--nojs');
 
 navToggle.addEventListener('click', function () {
   if (nav.classList.contains('nav--closed')) {
@@ -12,3 +14,5 @@ navToggle.addEventListener('click', function () {
     nav.classList.remove('nav--opened');
   }
 });
+
+
