@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
@@ -42,9 +46,9 @@
     </nav>
   </header>
   <main class="main-container">
-    <section class="welcome">
+    <section class="welcome welcome--catalog">
       <h1 class="visually-hidden">Добро пожаловать в Седону.</h1>
-      <img class="welcome__image" src="img/welcome.svg" width="282" height="214"
+      <img class="welcome__image welcome__image--catalog" src="img/welcome-catalog.svg" width="229" height="39"
         alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!">
     </section>
     <section class="catalog">
@@ -56,27 +60,61 @@
       </div>
       <ul class="catalog__list">
         <li class="catalog__item">
-          <img class="catalog__card-image" src="img/product-card-1.jpg" width="280" height="280"
-            alt="Дорога на фоне заката.">
+          <div class="catalog__image">
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="img/product-card-1-desktop.jpg 1x, img/product-card-1-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/product-card-1-tablet.jpg 1x, img/product-card-1-tablet@2x.jpg 2x">
+              <img class="catalog__card-image" src="img/product-card-1-mobile.jpg"
+                srcset="img/product-card-1-mobile@2x.jpg 2x" width="280" height="280" alt="Дорога на фоне заката.">
+            </picture>
+          </div>
           <h3 class="catalog__card-title">Неродные просторы</h3>
           <p class="catalog__card-description">Автор фото: Борис</p>
           <button class="catalog__likes-button"><span class="catalog__likes">1350</span></button>
         </li>
         <li class="catalog__item">
-          <img class="catalog__card-image" src="img/product-card-2.jpg" width="280" height="280" alt="Кактус.">
+          <div class="catalog__image">
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="img/product-card-2-desktop.jpg 1x, img/product-card-2-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/product-card-2-tablet.jpg 1x, img/product-card-2-tablet@2x.jpg 2x">
+              <img class="catalog__card-image" src="img/product-card-2-mobile.jpg"
+                srcset="img/product-card-2-mobile@2x.jpg 2x" width="280" height="280" alt="Кактус.">
+            </picture>
+          </div>
           <h3 class="catalog__card-title">Местная растительность</h3>
           <p class="catalog__card-description">Автор фото: Сергей</p>
           <button class="catalog__likes-button"><span class="catalog__likes">143</span></button>
         </li>
         <li class="catalog__item">
-          <img class="catalog__card-image" src="img/product-card-3.jpg" width="280" height="280" alt="Дорога в лесу.">
+          <div class="catalog__image">
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="img/product-card-3-desktop.jpg 1x, img/product-card-3-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/product-card-3-tablet.jpg 1x, img/product-card-3-tablet@2x.jpg 2x">
+              <img class="catalog__card-image" src="img/product-card-3-mobile.jpg"
+                srcset="img/product-card-3-mobile@2x.jpg 2x" width="280" height="280" alt="Дорога в лесу.">
+            </picture>
+          </div>
           <h3 class="catalog__card-title">Дорога на север</h3>
           <p class="catalog__card-description">Автор фото: Петр</p>
           <button class="catalog__likes-button"><span class="catalog__likes">96</span></button>
         </li>
         <li class="catalog__item">
-          <img class="catalog__card-image" src="img/product-card-4.jpg" width="280" height="280"
-            alt="Мост на фоне Каньона.">
+          <div class="catalog__image">
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="img/product-card-4-desktop.jpg 1x, img/product-card-4-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/product-card-4-tablet.jpg 1x, img/product-card-4-tablet@2x.jpg 2x">
+              <img class="catalog__card-image" src="img/product-card-4-mobile.jpg"
+                srcset="img/product-card-4-mobile@2x.jpg 2x" width="280" height="280" alt="Мост на фоне Каньона.">
+            </picture>
+          </div>
           <h3 class="catalog__card-title">Мост дьявола</h3>
           <p class="catalog__card-description">Автор фото: Антон</p>
           <button class="catalog__likes-button"><span class="catalog__likes">254</span></button>
@@ -91,7 +129,14 @@
         <button class="video__button">
           <span class="visually-hidden">Воспроизвести.</span>
         </button>
-        <video class="video__container" width="648px" poster="../img/video.jpg"></video>
+        <div class="video__container">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/video-desktop.jpg 1x, img/video-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/video-tablet.jpg 1x, img/video-tablet@2x.jpg 2x">
+            <img src="img/video-mobile.jpg" srcset="img/video-mobile@2x.jpg 2x" width="280px" height="177px"
+              alt="Постер видеопрезентации.">
+          </picture>
+        </div>
       </div>
     </section>
   </main>
@@ -133,7 +178,8 @@
     <a class="footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
       <span class="visually-hidden">HTML Academy.</span>
       <span class="copyright__text">Разработано</span>
-      <svg class="copyright__icon" width="27" height="35" viewBox="0 0 27 35" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+      <svg class="copyright__icon" width="27" height="35" viewBox="0 0 27 35" fill="currentColor"
+        xmlns="http://www.w3.org/2000/svg">
         <path
           d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z" />
       </svg>

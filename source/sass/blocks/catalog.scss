@@ -76,8 +76,8 @@
 
 .catalog__item {
   display: grid;
-  position: relative;
   grid-template-columns: 1fr;
+  position: relative;
   padding-top: 24px;
   padding-bottom: 25px;
 
@@ -133,17 +133,21 @@
   }
 }
 
+.catalog__image {
+  @media (min-width: $tablet-width) {
+    grid-column: 1/-1;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-area: 1/1/4/-1;
+  }
+}
+
 .catalog__card-image {
   display: block;
   margin-bottom: 15px;
 
   @media (min-width: $tablet-width) {
-    grid-column: 1/-1;
-    margin: 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    grid-row: 1/4;
     margin: 0;
   }
 }

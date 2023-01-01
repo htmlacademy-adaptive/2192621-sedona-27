@@ -141,7 +141,11 @@
   padding: 54px 18px 40px;
 
   @media (min-width: $tablet-width) {
-    padding: 0;
+    padding: 0 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 50px;
   }
 }
 
@@ -150,13 +154,23 @@
 
   @media (min-width: $tablet-width) {
     grid-column: 3/4;
-    padding: 0;
+    padding: 0 31px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 83px;
   }
 }
 
 .advantages__card-container {
   @media (min-width: $tablet-width) {
     grid-column: 2/4;
+  }
+}
+
+.advantages__card-container--devil {
+  @media (min-width: $tablet-width) {
+    grid-area: 1/1/2/3;
   }
 }
 
