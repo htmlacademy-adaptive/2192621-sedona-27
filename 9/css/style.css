@@ -1064,6 +1064,17 @@ img {
   }
 }
 
+.copyright {
+  text-decoration: none;
+  color: #000000;
+}
+.copyright:hover .copyright__text, .copyright:hover .copyright__icon {
+  color: #81b3d2;
+}
+.copyright:active .copyright__text, .copyright:active .copyright__icon {
+  color: #b3b3b3;
+}
+
 .copyright__text {
   margin-right: 12px;
   text-transform: uppercase;
@@ -1071,22 +1082,10 @@ img {
   font-size: 14px;
   line-height: 1.5;
   text-decoration: none;
-  color: #000000;
 }
 
 .copyright__icon {
   display: block;
-  color: #000000;
-}
-
-.copyright {
-  text-decoration: none;
-}
-.copyright:hover .copyright__text, .copyright:hover .copyright__icon {
-  color: #81b3d2;
-}
-.copyright:active .copyright__text, .copyright:active .copyright__icon {
-  color: #b3b3b3;
 }
 
 .form {
