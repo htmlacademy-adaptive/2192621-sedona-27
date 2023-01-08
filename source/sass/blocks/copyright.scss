@@ -1,22 +1,8 @@
 @use "../variables.scss" as *;
 
-.copyright__text {
-  margin-right: 12px;
-  text-transform: uppercase;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.5;
-  text-decoration: none;
-  color: $black;
-}
-
-.copyright__icon {
-  display: block;
-  fill: $black;
-}
-
 .copyright {
   text-decoration: none;
+  color: $black;
 
   &:hover .copyright__text,
   &:hover .copyright__icon {
@@ -27,4 +13,17 @@
   &:active .copyright__icon {
     color: $gray-70;
   }
+}
+
+.copyright__text {
+  margin-right: 12px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  text-decoration: none;
+}
+
+.copyright__icon {
+  display: block;
 }
