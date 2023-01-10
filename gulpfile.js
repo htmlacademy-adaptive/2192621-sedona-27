@@ -15,7 +15,7 @@ import htmlmin from 'gulp-htmlmin';
 
 // Styles
 
-const styles = () => {
+export const styles = () => {
   return gulp.src('source/sass/style.scss', { sourcemaps: true })
     .pipe(plumber())
     .pipe(sass().on('error', sass.logError))
@@ -70,7 +70,7 @@ const createWebp = () => {
 
 // SVG
 
-export const makeStack = () => {
+const makeStack = () => {
   return gulp.src(`source/img/*.svg`)
     .pipe(svgo())
     .pipe(stacksvg({ output: `sprite` }))
@@ -93,7 +93,7 @@ const copy = (done) => {
 
 // Clean
 
-export const clean = () => {
+const clean = () => {
   return del('build');
 };
 
@@ -136,13 +136,26 @@ export const build = gulp.series(
   styles,
   html,
   scripts,
-  svg,
-  sprite,
+  makeStack,
   createWebp
   ),
   );
 
 
+// Default
+
 export default gulp.series(
-  html, styles, server, watcher
-);
+  clean,
+  copy,
+  copyImages,
+  gulp.parallel(
+  styles,
+  html,
+  scripts,
+  makeStack,
+  createWebp
+  ),
+  gulp.series(
+  server,
+  watcher
+  ));
