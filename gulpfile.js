@@ -54,7 +54,7 @@ const optimizeImages = () => {
 }
 
 const copyImages = () => {
-  return gulp.src('source/img/**/*.{png,jpg}')
+  return gulp.src('source/img/**/*.{png,jpg,svg}', '!source/img/sprite/*.svg')
     .pipe(gulp.dest('build/img'))
 }
 
@@ -71,10 +71,10 @@ const createWebp = () => {
 // SVG
 
 const makeStack = () => {
-  return gulp.src(`source/img/*.svg`)
+  return gulp.src(`source/img/sprite/*.svg`)
     .pipe(svgo())
     .pipe(stacksvg({ output: `sprite` }))
-    .pipe(gulp.dest('build/img'));
+    .pipe(gulp.dest('build/img/sprite'));
 }
 
 // Copy
@@ -93,7 +93,7 @@ const copy = (done) => {
 
 // Clean
 
-const clean = () => {
+export const clean = () => {
   return del('build');
 };
 

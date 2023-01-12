@@ -11,7 +11,7 @@
 
 .client-info-list__control--phone::after {
   content: "";
-  background: $gray-90 url("../img/phone.svg") no-repeat center;
+  background: $gray-90 url("../img/sprite/phone.svg") no-repeat center;
   width: 58px;
   height: 58px;
   padding: 0;
@@ -20,7 +20,7 @@
 
 .client-info-list__control--mail::after {
   content: "";
-  background: $gray-90 url("../img/letter.svg") no-repeat center;
+  background: $gray-90 url("../img/sprite/letter.svg") no-repeat center;
   width: 58px;
   height: 58px;
   padding: 0;

@@ -1,0 +1,88 @@
+@use "../variables.scss" as *;
+
+.feedback-modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 320px;
+  margin: auto;
+  padding: 39px;
+  padding-bottom: 0;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: $white;
+
+  @media (min-width: $tablet-width) {
+    width: 640px;
+    padding-top: 53px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 51px;
+  }
+}
+
+.feedback-modal__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.4;
+  color: $black;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    line-height: 1.23;
+  }
+}
+
+.feedback-modal__description {
+  margin: 0;
+  padding: 25px 5px 30px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  color: $dark-gray;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 28px;
+  }
+}
+
+.feedback-modal__button-wrapper {
+  width: 320px;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: $light-gray;
+
+  @media (min-width: $tablet-width) {
+    width: 640px;
+    padding: 44px;
+  }
+}
+
+.feedback-modal__button {
+  padding: 18px;
+  padding-bottom: 14px;
+  width: 280px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.4;
+  color: $white;
+  background-color: $blue;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    width: 458px;
+    font-size: 21px;
+    line-height: 1.23;
+  }
+}
