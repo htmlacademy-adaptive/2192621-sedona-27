@@ -23,7 +23,7 @@
 
 .social__link--vkontakte::after {
   content: "";
-  mask: url("../img/sprite/vk.svg") center no-repeat;
+  mask: url("../img/sprite.svg#vk") center no-repeat;
   width: 24px;
   height: 14px;
   background-color: $white;
@@ -31,7 +31,7 @@
 
 .social__link--telegram::after {
   content: "";
-  mask: url("../img/sprite/tg.svg") center no-repeat;
+  mask: url("../img/sprite.svg#tg") center no-repeat;
   width: 22px;
   height: 18px;
   background-color: $white;
@@ -39,7 +39,7 @@
 
 .social__link--youtube::after {
   content: "";
-  mask: url("../img/sprite/youtube.svg") center no-repeat;
+  mask: url("../img/sprite.svg#youtube") center no-repeat;
   width: 20px;
   height: 14px;
   background-color: $white;

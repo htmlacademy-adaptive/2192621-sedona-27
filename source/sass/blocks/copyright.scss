@@ -2,7 +2,7 @@
 
 .footer__copyright::after {
   content: "";
-  mask: url("../img/sprite/htmlacademy.svg") center no-repeat;
+  mask: url("../img/sprite.svg#htmlacademy") center no-repeat;
   background-color: $black;
   width: 27px;
   height: 34px;
