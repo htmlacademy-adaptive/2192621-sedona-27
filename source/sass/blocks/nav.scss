@@ -29,7 +29,7 @@
 .nav--closed .nav__toggle::before {
   content: "";
   position: absolute;
-  background: url("../img/opened-button.svg") no-repeat center;
+  background: url("../img/sprite/opened-button.svg") no-repeat center;
   top: 17px;
   left: 20px;
   width: 23px;
@@ -93,7 +93,7 @@
 .nav--opened .nav__toggle::before {
   position: absolute;
   content: "";
-  background: url("../img/closed-button.svg") no-repeat center;
+  background: url("../img/sprite/closed-button.svg") no-repeat center;
   top: 15px;
   left: 18px;
   width: 27px;

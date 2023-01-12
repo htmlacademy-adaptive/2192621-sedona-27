@@ -1,5 +1,30 @@
 @use "../variables.scss" as *;
 
+.footer__copyright::after {
+  content: "";
+  mask: url("../img/sprite.svg#htmlacademy") center no-repeat;
+  background-color: $black;
+  width: 27px;
+  height: 34px;
+}
+
+.copyright {
+  text-decoration: none;
+  color: $black;
+
+  &:hover {
+    &::after {
+      background-color: $blue;
+    }
+  }
+
+  &:active {
+    &::after {
+      background-color: $gray-70;
+    }
+  }
+}
+
 .copyright__text {
   margin-right: 12px;
   text-transform: uppercase;
@@ -7,24 +32,12 @@
   font-size: 14px;
   line-height: 1.5;
   text-decoration: none;
-  color: $black;
-}
 
-.copyright__icon {
-  display: block;
-  color: $black;
-}
-
-.copyright {
-  text-decoration: none;
-
-  &:hover .copyright__text,
-  &:hover .copyright__icon {
+  &:hover {
     color: $blue;
   }
 
-  &:active .copyright__text,
-  &:active .copyright__icon {
+  &:active {
     color: $gray-70;
   }
 }
