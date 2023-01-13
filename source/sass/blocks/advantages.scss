@@ -6,18 +6,13 @@
 
 .advantages__main-title {
   margin: 0;
-  padding: 32px 24px;
-  padding-bottom: 35px;
+  padding: 32px 24px 35px;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.4;
   color: $black;
   text-transform: uppercase;
   text-align: center;
-
-  br {
-    display: none;
-  }
 
   @media (min-width: $tablet-width) {
     padding-top: 48px;
@@ -106,7 +101,7 @@
   &::after {
     content: "";
     position: absolute;
-    background: url("../img/spacebar.svg") no-repeat center;
+    background: url("../img/sprite/spacebar.svg") no-repeat center;
     top: 0;
     width: 320px;
     height: 37px;
@@ -141,7 +136,11 @@
   padding: 54px 18px 40px;
 
   @media (min-width: $tablet-width) {
-    padding: 0;
+    padding: 0 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 50px;
   }
 }
 
@@ -150,13 +149,23 @@
 
   @media (min-width: $tablet-width) {
     grid-column: 3/4;
-    padding: 0;
+    padding: 0 31px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 83px;
   }
 }
 
 .advantages__card-container {
   @media (min-width: $tablet-width) {
     grid-column: 2/4;
+  }
+}
+
+.advantages__card-container--devil {
+  @media (min-width: $tablet-width) {
+    grid-area: 1/1/2/3;
   }
 }
 
@@ -182,7 +191,7 @@
 
   &::after {
     counter-increment: list1;
-    content: counter(list1) ". ";
+    content: "− №" counter(list1) " −";
     margin-top: 11px;
     font-weight: 400;
     font-size: 14px;

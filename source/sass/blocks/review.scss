@@ -8,7 +8,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 160px;
+    padding: 0 120px;
   }
 }
 
@@ -31,8 +31,9 @@
 }
 
 .review__description {
+  position: relative;
   margin: 0;
-  margin-bottom: 28px;
+  padding-bottom: 28px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.5;
@@ -42,6 +43,20 @@
 
   br {
     display: none;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 320px;
+    border-top: 1px solid $light-gray-90;
+    transform: translate(-50%, 0);
+
+    @media (min-width: $tablet-width) {
+      content: none;
+    }
   }
 
   @media (min-width: $tablet-width) {

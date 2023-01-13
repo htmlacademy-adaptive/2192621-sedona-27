@@ -31,7 +31,7 @@
 }
 
 .reasons__item--housing {
-  background: url("../../img/hotels.svg") no-repeat left 0;
+  background: url("../img/sprite.svg#hotels") no-repeat left 0;
 
   @media (min-width: $tablet-width) {
     padding: 158px 33px 60px;
@@ -47,7 +47,7 @@
 }
 
 .reasons__item--food {
-  background: url("../../img/food.svg") no-repeat left 0;
+  background: url("../img/sprite.svg#food") no-repeat left 0;
 
   @media (min-width: $tablet-width) {
     padding: 156px 33px 61px;
@@ -63,7 +63,7 @@
 }
 
 .reasons__item--souvenir {
-  background: url("../../img/souvenirs.svg") no-repeat left 0;
+  background: url("../img/sprite.svg#souvenirs") no-repeat left 0;
 
   @media (min-width: $tablet-width) {
     padding: 153px 33px 64px;

@@ -9,11 +9,28 @@
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-around;
+    padding: 17px 0;
   }
 }
 
-.review-list__item:not(:last-child) {
+.review-list--checkbox {
+  @media (min-width: $desktop-width) {
+    padding: 31px 0;
+  }
+}
+
+.review-list__item {
   margin-bottom: 16px;
+
+  @media (min-width: $tablet-width) {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
 }
 
 .review-list__control {
@@ -72,5 +89,5 @@
   content: "";
   width: 22px;
   height: 16px;
-  background: url("../img/check.svg") no-repeat center;
+  background: url("../img/sprite.svg#check") no-repeat center;
 }
