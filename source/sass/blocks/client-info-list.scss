@@ -1,6 +1,6 @@
 @use "../variables.scss" as *;
 
-.client-info-list__item:not(:last-child) {
+.client-info-list__item {
   margin-bottom: 16px;
 }
 
