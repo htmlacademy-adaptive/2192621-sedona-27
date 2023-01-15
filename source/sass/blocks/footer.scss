@@ -4,7 +4,6 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   width: 320px;
-  min-height: 233px;
   margin: 0 auto;
   text-align: center;
   background-color: #ffffff;
@@ -21,8 +20,8 @@
 
 .footer__link {
   grid-column: 1/-1;
-  margin-top: auto;
-  margin-bottom: auto;
+  padding-top: 40px;
+  padding-bottom: 34px;
   font-weight: 700;
   font-size: 21px;
   line-height: 1.2;
@@ -32,21 +31,27 @@
 
   @media (min-width: $tablet-width) {
     grid-column: 1/2;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 0;
   }
 }
 
 .footer__list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  grid-column: 2/3;
-  column-gap: 6px;
+  grid-column: 1/-1;
+  gap: 6px;
   align-items: center;
   margin: 0;
   padding: 0;
+  padding-bottom: 40px;
   list-style-type: none;
 
   @media (min-width: $tablet-width) {
     grid-column: 2/3;
+    padding: 0;
   }
 }
 
@@ -57,8 +62,10 @@
   align-self: center;
   grid-column: 1/-1;
   margin: 0;
+  padding-bottom: 23px;
 
   @media (min-width: $tablet-width) {
     grid-column: 3/4;
+    padding: 0;
   }
 }
