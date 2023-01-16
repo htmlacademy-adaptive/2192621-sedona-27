@@ -131,27 +131,37 @@
   }
 
   &--town {
+    box-sizing: border-box;
     padding: 54px 18px 40px;
 
     @media (min-width: $tablet-width) {
-      padding: 0 16px;
+      padding: 52px 33px 31px;
     }
 
     @media (min-width: $desktop-width) {
-      padding: 0 50px;
+      padding: 52px 55px 51px;
     }
   }
 
   &--devil {
+    box-sizing: border-box;
     padding: 37px 18px;
+
+    br {
+      display: none;
+    }
 
     @media (min-width: $tablet-width) {
       grid-column: 3/4;
-      padding: 0 31px;
+      padding: 52px 33px 31px;
     }
 
     @media (min-width: $desktop-width) {
-      padding: 0 83px;
+      padding: 52px 50px 51px;
+
+      br {
+        display: block;
+      }
     }
   }
 
@@ -207,6 +217,7 @@
     font-size: 21px;
     line-height: 1.23;
     margin: 0;
+    margin-bottom: 24px;
 
     br {
       display: block;

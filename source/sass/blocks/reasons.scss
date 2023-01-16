@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   margin: 0;
-  padding: 23px 18px 45px;
+  padding: 24px 18px 45px;
   row-gap: 25px;
   list-style-type: none;
   color: $black;
@@ -65,7 +65,7 @@
     background: url("../img/sprite.svg#souvenirs") no-repeat left 0/40px 38px;
 
     @media (min-width: $tablet-width) {
-      padding: 153px 33px 64px;
+      padding: 153px 37px 64px;
       background-size: 66px 75px;
       background-position: center 64px;
     }
@@ -90,6 +90,10 @@
 
   @media (min-width: $tablet-width) {
     text-align: center;
+    font-size: 21px;
+    line-height: 1.23;
+    margin: 0;
+    margin-bottom: 24px;
   }
 }
 
