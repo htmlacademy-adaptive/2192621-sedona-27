@@ -28,6 +28,7 @@
 }
 
 .client-info-list__label {
+  margin-left: 15px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.5;
@@ -38,8 +39,7 @@
 .client-info-list__input {
   box-sizing: border-box;
   grid-column: 1/2;
-  padding: 16px;
-  padding-right: 0;
+  padding: 19px 0 16px 16px;
   font-family: inherit;
   font-weight: 700;
   font-size: 18px;
