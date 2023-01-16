@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   margin: 0;
-  padding: 23px 18px 46px;
+  padding: 23px 18px 45px;
   row-gap: 25px;
   list-style-type: none;
   color: $black;
@@ -28,65 +28,69 @@
     flex-wrap: wrap;
     align-items: center;
   }
-}
 
-.reasons__item--housing {
-  background: url("../img/sprite.svg#hotels") no-repeat left 0;
+  &--housing {
+    background: url("../img/sprite.svg#hotels") no-repeat left 0/39px 42px;
 
-  @media (min-width: $tablet-width) {
-    padding: 158px 33px 60px;
-    background-size: 77px 72px;
-    background-position: center 60px;
+    @media (min-width: $tablet-width) {
+      padding: 158px 33px 60px;
+      background-size: 77px 72px;
+      background-position: center 60px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 169px 50px 69px;
+      background-size: 79px 72px;
+      background-position: center 69px;
+    }
   }
 
-  @media (min-width: $desktop-width) {
-    padding: 169px 50px 69px;
-    background-size: 79px 72px;
-    background-position: center 69px;
-  }
-}
+  &--food {
+    background: url("../img/sprite.svg#food") no-repeat left 0/40px 39px;
 
-.reasons__item--food {
-  background: url("../img/sprite.svg#food") no-repeat left 0;
+    @media (min-width: $tablet-width) {
+      padding: 156px 33px 61px;
+      background-size: 80px 68px;
+      background-position: center 62px;
+    }
 
-  @media (min-width: $tablet-width) {
-    padding: 156px 33px 61px;
-    background-size: 80px 68px;
-    background-position: center 62px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 166px 50px 71px;
-    background-size: 73px 68px;
-    background-position: center 72px;
-  }
-}
-
-.reasons__item--souvenir {
-  background: url("../img/sprite.svg#souvenirs") no-repeat left 0;
-
-  @media (min-width: $tablet-width) {
-    padding: 153px 33px 64px;
-    background-size: 66px 75px;
-    background-position: center 64px;
+    @media (min-width: $desktop-width) {
+      padding: 166px 50px 71px;
+      background-size: 73px 68px;
+      background-position: center 72px;
+    }
   }
 
-  @media (min-width: $desktop-width) {
-    padding: 170px 50px 67px;
-    background-size: 77px 75px;
-    background-position: center 69px;
+  &--souvenir {
+    background: url("../img/sprite.svg#souvenirs") no-repeat left 0/40px 38px;
+
+    @media (min-width: $tablet-width) {
+      padding: 153px 33px 64px;
+      background-size: 66px 75px;
+      background-position: center 64px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 170px 50px 67px;
+      background-size: 77px 75px;
+      background-position: center 69px;
+    }
   }
 }
 
 .reasons__card-title {
   grid-column: 2/3;
-  margin-top: 8px;
+  margin-top: 9px;
   margin-bottom: 16px;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.4;
   color: $black;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    text-align: center;
+  }
 }
 
 .reasons__card-description {

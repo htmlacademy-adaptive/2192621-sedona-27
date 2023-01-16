@@ -10,12 +10,13 @@
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/ptsans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
 </head>
 
 <body class="page__body page__container">
   <header class="header">
     <a class="header__logo logo" href="index.html">
-      <img class="logo__image" src="img/index/logotype-phone.svg" width="185" height="96" alt="Город Седона.">
+      <img class="logo__image" src="img/logotype.svg" width="185" height="96" alt="Город Седона.">
     </a>
     <nav class="nav nav--closed nav--nojs">
       <button class="nav__toggle" type="button">
@@ -110,14 +111,14 @@
                 <span class="review-list__text">Скорее положительное</span>
                 <input class="review-list__input visually-hidden" type="radio" name="opinion" id="good" value="good"
                   checked>
-                <span class="review-list__control-mark"></span>
+                <span class="review-list__control-mark review-list__control-mark--radio"></span>
               </label>
             </li>
             <li class="review-list__item">
               <label class="review-list__control" for="bad">
                 <span class="review-list__text">Скорее отрицательное</span>
                 <input class="review-list__input visually-hidden" type="radio" name="opinion" id="bad" value="bad">
-                <span class="review-list__control-mark"></span>
+                <span class="review-list__control-mark review-list__control-mark--radio"></span>
               </label>
             </li>
             <li class="review-list__item">
@@ -125,7 +126,7 @@
                 <span class="review-list__text">Затрудняюсь ответить</span>
                 <input class="review-list__input visually-hidden" type="radio" name="opinion" id="difficult-to-answer"
                   value="difficult-to-answer">
-                <span class="review-list__control-mark"></span>
+                <span class="review-list__control-mark review-list__control-mark--radio"></span>
               </label>
             </li>
           </ul>

@@ -6,16 +6,19 @@
 
 .advantages__main-title {
   margin: 0;
-  padding: 32px 24px 35px;
+  padding: 34px 24px 35px;
   font-weight: 700;
   font-size: 18px;
-  line-height: 1.4;
+  line-height: 1.44;
   color: $black;
   text-transform: uppercase;
   text-align: center;
 
   @media (min-width: $tablet-width) {
     padding-top: 48px;
+    padding-bottom: 29px;
+    font-size: 21px;
+    line-height: 1.23;
 
     br {
       display: block;
@@ -29,6 +32,7 @@
 
 .advantages__main-description {
   margin: 0;
+  margin-bottom: 16px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.5;
@@ -37,6 +41,8 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
+    margin: 0;
+
     br {
       display: none;
     }
@@ -62,7 +68,7 @@
   &:nth-child(3),
   &:nth-child(4),
   &:nth-child(5) {
-    padding: 24px 18px;
+    padding: 25px 18px;
 
     @media (min-width: $tablet-width) {
       padding: 0;
@@ -75,43 +81,42 @@
       grid-column: 1/-1;
     }
   }
-}
 
-.advantages__item--town,
-.advantages__item--devil {
-  @media (min-width: $tablet-width) {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-.advantages__item--town {
-  position: relative;
-  padding-top: 16px;
-
-  @media (min-width: $tablet-width) {
-    padding: 0;
-    margin-top: 56px;
+  &--town,
+  &--devil {
+    @media (min-width: $tablet-width) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
   }
 
-  @media (min-width: $desktop-width) {
-    margin-top: 44px;
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    background: url("../img/sprite/spacebar.svg") no-repeat center;
-    top: 0;
-    width: 320px;
-    height: 37px;
+  &--town {
+    position: relative;
+    padding-top: 16px;
 
     @media (min-width: $tablet-width) {
-      display: none;
+      padding: 0;
+      margin-top: 56px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 44px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      background: url("../img/sprite.svg#spacebar") no-repeat center;
+      top: 0;
+      width: 320px;
+      height: 37px;
+
+      @media (min-width: $tablet-width) {
+        display: none;
+      }
     }
   }
 }
-
 
 .advantages__container {
   display: flex;
@@ -124,36 +129,36 @@
   @media (min-width: $tablet-width) {
     min-height: 256px;
   }
-}
 
-.advantages__container--town,
-.advantages__container--devil {
-  color: $white;
-  background-color: $blue;
-}
+  &--town {
+    padding: 54px 18px 40px;
 
-.advantages__container--town {
-  padding: 54px 18px 40px;
+    @media (min-width: $tablet-width) {
+      padding: 0 16px;
+    }
 
-  @media (min-width: $tablet-width) {
-    padding: 0 16px;
+    @media (min-width: $desktop-width) {
+      padding: 0 50px;
+    }
   }
 
-  @media (min-width: $desktop-width) {
-    padding: 0 50px;
+  &--devil {
+    padding: 37px 18px;
+
+    @media (min-width: $tablet-width) {
+      grid-column: 3/4;
+      padding: 0 31px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 0 83px;
+    }
   }
-}
 
-.advantages__container--devil {
-  padding: 37px 18px;
-
-  @media (min-width: $tablet-width) {
-    grid-column: 3/4;
-    padding: 0 31px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 0 83px;
+  &--town,
+  &--devil {
+    color: $white;
+    background-color: $blue;
   }
 }
 
@@ -161,11 +166,11 @@
   @media (min-width: $tablet-width) {
     grid-column: 2/4;
   }
-}
 
-.advantages__card-container--devil {
-  @media (min-width: $tablet-width) {
-    grid-area: 1/1/2/3;
+  &--devil {
+    @media (min-width: $tablet-width) {
+      grid-area: 1/1/2/3;
+    }
   }
 }
 
@@ -181,7 +186,7 @@
   margin-bottom: 17px;
   font-weight: 700;
   font-size: 18px;
-  line-height: 1.4;
+  line-height: 1.44;
   text-transform: uppercase;
   text-align: center;
 
@@ -199,6 +204,10 @@
   }
 
   @media (min-width: $tablet-width) {
+    font-size: 21px;
+    line-height: 1.23;
+    margin: 0;
+
     br {
       display: block;
     }
@@ -239,10 +248,4 @@
   line-height: 1.5;
   text-transform: uppercase;
   text-align: center;
-}
-
-.advantages__card-image--devil {
-  @media (min-width: $tablet-width) {
-    grid-area: 1/1/2/3;
-  }
 }

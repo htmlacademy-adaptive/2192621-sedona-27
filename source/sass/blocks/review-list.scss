@@ -8,14 +8,15 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     padding: 17px 0;
   }
-}
 
-.review-list--checkbox {
-  @media (min-width: $desktop-width) {
-    padding: 31px 0;
+  &--checkbox {
+    @media (min-width: $desktop-width) {
+      padding: 31px 0;
+    }
   }
 }
 
@@ -57,7 +58,17 @@
   width: 46px;
   height: 46px;
   background-color: $light-gray;
-  border-radius: 50%;
+
+  &--radio {
+    border-radius: 50%;
+  }
+
+  &--checkbox {
+    width: 46px;
+    height: 46px;
+    background-color: $light-gray;
+    border-radius: 4px;
+  }
 
   &:hover {
     background-color: $light-gray-90;
@@ -65,14 +76,12 @@
 
   &:active {
     background-color: $gray-84;
-  }
-}
+    outline: none;
 
-.review-list__control-mark--checkbox {
-  width: 46px;
-  height: 46px;
-  background-color: $light-gray;
-  border-radius: 4px;
+    &::after {
+      opacity: 0.3;
+    }
+  }
 }
 
 .review-list__input[type="radio"]:checked + .review-list__control-mark::after {
@@ -90,4 +99,11 @@
   width: 22px;
   height: 16px;
   background: url("../img/sprite.svg#check") no-repeat center;
+}
+
+.review-list__input[type="radio"]:focus + .review-list__control-mark,
+.review-list__input[type="checkbox"]:focus + .review-list__control-mark {
+  background-color: $white;
+  outline: 4px solid $light-gray-90;
+  outline-offset: -4px;
 }

@@ -47,4 +47,15 @@
   border: none;
   background-color: $light-gray;
   color: $black;
+
+  &:hover {
+    background-color: $light-gray-90;
+  }
+
+  &:active,
+  &:focus-visible {
+    background-color: $white;
+    outline: 4px solid $light-gray-90;
+    outline-offset: -4px;
+  }
 }
