@@ -26,7 +26,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 59px;
+    padding-top: 61px;
   }
 }
 
@@ -65,16 +65,6 @@
   color: $black;
   background-color: $gray;
 
-  &:nth-child(3),
-  &:nth-child(4),
-  &:nth-child(5) {
-    padding: 25px 18px;
-
-    @media (min-width: $tablet-width) {
-      padding: 0;
-    }
-  }
-
   @media (min-width: $tablet-width) {
     &:nth-child(1),
     &:nth-child(2) {
@@ -84,6 +74,8 @@
 
   &--town,
   &--devil {
+    background-color: $blue;
+
     @media (min-width: $tablet-width) {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -131,27 +123,37 @@
   }
 
   &--town {
+    box-sizing: border-box;
     padding: 54px 18px 40px;
 
     @media (min-width: $tablet-width) {
-      padding: 0 16px;
+      padding: 52px 33px 31px;
     }
 
     @media (min-width: $desktop-width) {
-      padding: 0 50px;
+      padding: 52px 55px 51px;
     }
   }
 
   &--devil {
+    box-sizing: border-box;
     padding: 37px 18px;
+
+    br {
+      display: none;
+    }
 
     @media (min-width: $tablet-width) {
       grid-column: 3/4;
-      padding: 0 31px;
+      padding: 52px 33px 31px;
     }
 
     @media (min-width: $desktop-width) {
-      padding: 0 83px;
+      padding: 52px 50px 51px;
+
+      br {
+        display: block;
+      }
     }
   }
 
@@ -159,6 +161,31 @@
   &--devil {
     color: $white;
     background-color: $blue;
+  }
+
+  &--square,
+  &--road,
+  &--tourist {
+    padding: 25px 18px;
+    box-sizing: border-box;
+
+    @media (min-width: $tablet-width) {
+      padding: 52px 6px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 57px 20px 36px;
+    }
+  }
+
+  &--road {
+    @media (min-width: $tablet-width) {
+      padding: 41px 20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 35px 22px 34px;
+    }
   }
 }
 
@@ -207,6 +234,7 @@
     font-size: 21px;
     line-height: 1.23;
     margin: 0;
+    margin-bottom: 24px;
 
     br {
       display: block;

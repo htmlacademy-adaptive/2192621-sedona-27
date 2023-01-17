@@ -5,10 +5,6 @@
   flex-direction: column;
   align-items: center;
 
-  @media (min-width: $tablet-width) {
-    padding-bottom: 40px;
-  }
-
   @media (min-width: $desktop-width) {
     padding-bottom: 48px;
   }
@@ -17,10 +13,10 @@
 .presentaion__title {
   margin: 0;
   margin-top: 17px;
-  margin-bottom: 35px;
+  margin-bottom: 28px;
   font-weight: 700;
-  font-size: 21px;
-  line-height: 1.2;
+  font-size: 18px;
+  line-height: 1.44;
   color: $black;
   text-transform: uppercase;
 
@@ -29,6 +25,10 @@
     margin-bottom: 30px;
     font-size: 30px;
     line-height: 0.86;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 33px;
   }
 }
 
@@ -48,7 +48,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 66px;
+    margin-bottom: 92px;
 
     br {
       display: block;
@@ -56,6 +56,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 64px;
+    margin-bottom: 87px;
   }
 }

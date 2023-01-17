@@ -3,13 +3,26 @@
 .main-container {
   width: 320px;
   margin: 0 auto;
+  padding-bottom: 10px;
   background-color: $white;
 
   @media (min-width: $tablet-width) {
     width: $tablet-width;
+    padding-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
     width: $desktop-width;
+    padding-bottom: 0;
+  }
+
+  &--catalog {
+    @media (min-width: $tablet-width) {
+      padding-bottom: 36px;
+
+      @media (min-width: $desktop-width) {
+        padding-bottom: 32px;
+      }
+    }
   }
 }
