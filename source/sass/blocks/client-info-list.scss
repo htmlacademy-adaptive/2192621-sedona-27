@@ -1,5 +1,27 @@
 @use "../variables.scss" as *;
 
+.client-info-list {
+  &--introduce {
+    @media (min-width: $tablet-width) {
+      padding-right: 44px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-right: 50px;
+    }
+  }
+
+  &--contact-information {
+    @media (min-width: $tablet-width) {
+      padding-left: 42px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 78px;
+    }
+  }
+}
+
 .client-info-list__item {
   margin-bottom: 16px;
 }
