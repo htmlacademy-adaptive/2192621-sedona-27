@@ -3,6 +3,7 @@
 .footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  flex-shrink: 0;
   width: 320px;
   margin: 0 auto;
   padding-top: 29px;
