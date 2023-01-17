@@ -247,7 +247,7 @@
 
 .form__textarea {
   display: block;
-  width: 100%;
+  width: 280px;
   min-height: 150px;
   padding: 12px;
   margin: 0 auto;
@@ -276,6 +276,7 @@
 
   @media (min-width: $tablet-width) {
     min-height: 160px;
+    width: 648px;
   }
 
   @media (min-width: $desktop-width) {

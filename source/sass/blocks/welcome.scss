@@ -67,17 +67,17 @@
     background: url("../img/sprite.svg#welcome-spacebar") bottom/ 100% 57px no-repeat, url("../img/catalog/welcome-image-catalog-tablet.jpg") center -56px/ cover;
 
     @media (min-resolution: 2dppx) {
-      background: url("../img/sprite.svg#welcome-spacebar") bottom/ 100% 57px no-repeat, url("../catalog/img/welcome-image-catalog-tablet@2x.jpg") center -56px/ cover;
+      background: url("../img/sprite.svg#welcome-spacebar") bottom/ 100% 57px no-repeat, url("../img/catalog/welcome-image-catalog-tablet@2x.jpg") center -56px/ cover;
     }
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 101px;
+    padding-top: 98px;
     padding-bottom: 120px;
     background: url("../img/sprite.svg#welcome-spacebar") bottom/ 100% 57px no-repeat, url("../img/catalog/welcome-image-catalog-desktop.jpg") center -56px/ cover;
 
     @media (min-resolution: 2dppx) {
-      background: url("../img/sprite.svg#welcome-spacebar") bottom/ 100% 57px no-repeat, url("../catalog/img/welcome-image-catalog-desktop@2x.jpg") center -56px/ cover;
+      background: url("../img/sprite.svg#welcome-spacebar") bottom/ 100% 57px no-repeat, url("../img/catalog/welcome-image-catalog-desktop@2x.jpg") center -56px/ cover;
     }
   }
 }
