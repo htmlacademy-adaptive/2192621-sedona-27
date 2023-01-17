@@ -65,16 +65,6 @@
   color: $black;
   background-color: $gray;
 
-  // &:nth-child(3),
-  // &:nth-child(4),
-  // &:nth-child(5) {
-  //   padding: 25px 18px;
-
-  //   @media (min-width: $tablet-width) {
-  //     padding: 0;
-  //   }
-  // }
-
   @media (min-width: $tablet-width) {
     &:nth-child(1),
     &:nth-child(2) {
@@ -84,6 +74,8 @@
 
   &--town,
   &--devil {
+    background-color: $blue;
+
     @media (min-width: $tablet-width) {
       display: grid;
       grid-template-columns: repeat(3, 1fr);

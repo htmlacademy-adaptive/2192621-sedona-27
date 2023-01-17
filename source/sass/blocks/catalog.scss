@@ -217,7 +217,7 @@
   &::before {
     content: "";
     display: block;
-    mask: url("../img/sprite.svg#likes-button") no-repeat center;
+    mask: url("../img/sprite.svg#likes-button") center no-repeat;
     width: 23px;
     height: 21px;
     margin-right: 14px;

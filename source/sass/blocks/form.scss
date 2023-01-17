@@ -294,7 +294,7 @@
   color: $white;
   text-transform: uppercase;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     width: 384px;
     margin-left: 97px;
   }
