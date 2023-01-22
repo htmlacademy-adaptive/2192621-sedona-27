@@ -118,6 +118,17 @@
   color: $black;
   background-color: $gray;
 
+  &::before {
+    counter-increment: list1;
+    content: "− №" counter(list1) " −";
+    margin-bottom: 16px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5;
+    color: $dark-gray;
+    order: 2;
+  }
+
   @media (min-width: $tablet-width) {
     min-height: 256px;
   }
@@ -125,6 +136,10 @@
   &--town {
     box-sizing: border-box;
     padding: 54px 18px 40px;
+
+    &::before {
+      color: $white;
+    }
 
     @media (min-width: $tablet-width) {
       padding: 52px 33px 31px;
@@ -138,6 +153,10 @@
   &--devil {
     box-sizing: border-box;
     padding: 37px 18px;
+
+    &::before {
+      color: $white;
+    }
 
     br {
       display: none;
@@ -210,7 +229,8 @@
   flex-direction: column;
   align-items: center;
   margin: 0;
-  margin-bottom: 17px;
+  margin-bottom: 12px;
+  order: 1;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.44;
@@ -221,20 +241,11 @@
     display: none;
   }
 
-  &::after {
-    counter-increment: list1;
-    content: "− №" counter(list1) " −";
-    margin-top: 11px;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.5;
-  }
-
   @media (min-width: $tablet-width) {
     font-size: 21px;
     line-height: 1.23;
     margin: 0;
-    margin-bottom: 24px;
+    margin-bottom: 18px;
 
     br {
       display: block;
@@ -251,6 +262,7 @@
   color: $dark-gray;
   text-transform: uppercase;
   text-align: center;
+  order: 3;
 
   br {
     display: none;
@@ -276,4 +288,5 @@
   line-height: 1.5;
   text-transform: uppercase;
   text-align: center;
+  order: 3;
 }

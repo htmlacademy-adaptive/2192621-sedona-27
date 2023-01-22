@@ -70,6 +70,10 @@
   background-color: $light-gray;
   color: $black;
 
+  &::placeholder {
+    color: rgba(0, 0, 0, 0.3);
+  }
+
   &:hover {
     background-color: $light-gray-90;
   }
