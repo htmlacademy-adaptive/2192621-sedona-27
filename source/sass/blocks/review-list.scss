@@ -18,13 +18,19 @@
 
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 17px 29px;
+    &--impression {
+      grid-template-columns: repeat(3, 280px);
+      padding: 17px 53px;
+      padding-right: 11px;
+      column-gap: 28px;
+      row-gap: 5px;
+    }
 
     &--attraction {
-      padding: 32px 29px;
+      grid-template-columns: repeat(4, auto);
+      padding: 32px 44px;
+      column-gap: 64px;
+      row-gap: 5px;
     }
   }
 }
@@ -51,6 +57,7 @@
 
 .review-list__text {
   grid-column: 2/3;
+  white-space: nowrap;
   padding: 10px 0;
   margin-left: 16px;
   font-weight: 700;
